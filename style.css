@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* COLORS */
+  --color-primary: #58a6ff;
+  --color-text: #c9d1d9;
+  --color-background: #0d1117;
+
+  /* BORDERS */
+  --border-radius: 1em;
+  --border: 1px solid var(--color-primary);
+
+  /* FONTS */
+  --font-family: "Noto Sans Mono", monospace;
+}
+
+.title {
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.tasklist {
+  display: flex;
+  align-items: center;
+}
+
+#app {
+  display: grid;
+  justify-items: center;
+  color: var(--color-text);
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-family);
+}
+
+.tasks {
+  margin: 0.4rem;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
